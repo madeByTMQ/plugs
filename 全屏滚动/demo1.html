@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      /*body {
+        height: 2000px;
+      }*/
+
+      .test, .ss {
+        height: 500px;
+      }
+
+      .t {
+        position: fixed;
+        z-index: 9;
+        top: 50%;
+        right: 10%;
+        background: #f2f2f2;
+      }
+
+      .ctl {
+        padding: 10px;
+      }
+
+      .ctl.active {
+        color: red;
+      }
+
+      .ctl.mouseover {
+        font-size: 40px;
+      }
+      .head {
+        height: 200px;
+      }
+    </style>
+</head>
+<body>
+
+<div class="head">hh</div>
+<div class="test">1</div>
+<div class="test">2</div>
+<div class="test">3</div>
+<div class="ss">4</div>
+
+<div class="t">
+  <div class="ctl">1</div>
+  <div class="ctl">2</div>
+  <div class="ctl">3</div>
+</div>
+
+
+<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="demo1.js"></script>
+
+<script type="text/javascript">
+  window.fullPage({
+    itemClass: 'test',
+    ctlClass: 'ctl',
+    activeClass: 'active',
+    hoverClass: 'mouseover',
+    animateSlot: 1000,
+    scrollAfter: function (dom) {
+      console.log(dom);
+    }
+  });
+</script>
+</body>
+</html>

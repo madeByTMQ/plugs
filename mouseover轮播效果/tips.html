@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tips</title>
+
+  <style type="text/css">
+    .hah {
+      width: 200px;
+      border: 1px solid #f2f2f2;
+      margin: 50px auto;
+      position: relative;
+    }
+
+    .hah>div {
+       display: none;
+    }
+
+    .bb {
+      margin: 400px auto;
+    }
+
+    .haha>div {
+      /*visibility: visible;*/
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="hah"> 222</div>
+
+<div class="hah bb"> 111</div>
+
+<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="tips.js"></script>
+<script type="text/javascript">
+$('.hah').generateTip({
+  height: 300,
+  // width: 300,
+  overClass: 'haha'
+});
+</script>
+</body>
+</html>
